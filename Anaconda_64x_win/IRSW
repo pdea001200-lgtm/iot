@@ -1,0 +1,44 @@
+IR 
+ 
+void setup() { 
+  // put your setup code here, to run once: 
+  pinMode(A0, INPUT);//IR sensor to CN11  
+  pinMode(0, OUTPUT); 
+  pinMode(1, OUTPUT); 
+  pinMode(2, OUTPUT); 
+  pinMode(4, OUTPUT);  
+  pinMode(13, OUTPUT); 
+} 
+ 
+void loop() { 
+  // put your main code here, to run repeatedly: 
+if(digitalRead(A0)==1) 
+{ 
+  digitalWrite(0,HIGH); 
+  digitalWrite(1,HIGH); 
+  digitalWrite(2,HIGH); 
+  digitalWrite(4,HIGH); 
+  digitalWrite(13,LOW); 
+   
+  } 
+else 
+{ 
+  digitalWrite(0,LOW); 
+  digitalWrite(1,LOW); 
+  digitalWrite(2,LOW); 
+  digitalWrite(4,LOW); 
+  digitalWrite(13,HIGH); 
+} 
+} 
+IR     wire    aurdino 
+vcc – violet- 5v 
+GND – Blue – GND 
+out– green – A0 
+instruc on to run code: 
+Arduino IDE open karaychi  
+New skech select  
+Code type  
+Tools madhe javun board - Arduino Uno select kraych 
+Nntr tools mdhech port select kraycha jo latest asel 
+Nntr compile Ani verify kraych  
+Nntr upload kraych
